@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="links.xsl"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <!--   MAHMUDUL   HASAN   KHAN   w3Schools.com   -->
+    <link>
+        <title>Facebook</title>
+        <url>
+            https://www.facebook.com/?ref=tn_tnmn
+        </url>
+    </link>
+    <link>
+        <title>cse.mahmud - Yahoo Mail</title>
+        <url>
+            http://us-mg6.mail.yahoo.com/neo/launch?.rand=a9m42a0jk8q7f
+        </url>
+    </link>
+    <link>
+        <title>W3Schools Online Web Tutorials</title>
+        <url>
+            http://w3schools.com/
+        </url>
+    </link>
+    <link>
+        <title>BASIS</title>
+        <url>
+            http://www.basis.org.bd/index.php/training
+        </url>
+    </link>
+    <link>
+        <title>Bdjobs.com : Largest Job Site in Bangladesh ::</title>
+        <url>
+            http://www.bdjobs.com/
+        </url>
+    </link>
+    <link>
+        <title>Top 10 Bollywood Movies</title>
+        <url>
+            http://www.top10bollywood.com/2009/07/top-10-bollywood-movies.html
+        </url>
+    </link>
+    <link>
+        <title>Getting Started</title>
+        <url>
+            http://www.mozilla.com/en-US/firefox/central/
+        </url>
+    </link>
+    <link>
+        <title>Index of</title>
+        <url>
+            http://localhost/
+        </url>
+    </link>
+    <link>
+        <title>Index of</title>
+        <url>
+            http://localhost:81/
+        </url>
+    </link>
+</root>

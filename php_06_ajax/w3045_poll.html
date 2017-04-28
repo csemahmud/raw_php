@@ -1,0 +1,59 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            
+            #sp_yes{
+                color: #00ff00;
+            }
+            
+            #sp_no{
+                color: #ff0000;
+            }
+            
+        </style>
+        <script type="text/javascript">
+            
+            function get_vote(str){
+                
+                if(window.XMLHttpRequest){
+                    //   code   for   IE7+,   Firefox   Chrome,   Opera   and   Safari
+                    var xmlhttp = new XMLHttpRequest();
+                }
+                else{
+                    //   code   for   IE6,   IE5
+                    var xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                }
+                
+                xmlhttp.onreadystatechange = function(){
+                    if(xmlhttp.readyState==4 && xmlhttp.status==200){
+                        document.getElementById('poll').innerHTML = xmlhttp.responseText;
+                    }
+                }
+                
+                xmlhttp.open('GET','w3045_poll_vote.php?vote='+str,true);
+                xmlhttp.send();
+            }
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div id="poll">
+            <h3>Do  you   like   AJAX   and   PHP   so   far   ?</h3>
+            <form action="" method="post">
+                
+                <input type="radio" name="vote" value="1" onclick="get_vote(this.value)"><span id="sp_yes">Yes</span>
+                <br/>
+                <input type="radio" name="vote" value="0" onclick="get_vote(this.value)"><span id="sp_no">No</span>
+                
+            </form>
+        </div>
+    </body>
+</html>

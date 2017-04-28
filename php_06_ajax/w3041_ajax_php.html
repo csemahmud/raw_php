@@ -1,0 +1,53 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            
+            function show_hint(str){
+                if(str.length==0){
+                    document.getElementById('text_hint').innerHTML = '';
+                    return ;
+                }
+                
+                if(window.XMLHttpRequest){
+                    //   code   for   IE7+,   Firefox   Chrome,   Opera   and   Safari
+                    var xmlhttp = new XMLHttpRequest();
+                }
+                else{
+                    //   code   for   IE6,   IE5
+                    var xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                }
+                
+                xmlhttp.onreadystatechange = function(){
+                    if(xmlhttp.readyState==4 && xmlhttp.status==200){
+                        document.getElementById('text_hint').innerHTML = xmlhttp.responseText;
+                    }
+                }
+                
+                xmlhttp.open('GET','w3041_get_hint.php?q='+str,true);
+                xmlhttp.send();
+            }
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <div>
+            
+            <p><b>Start   typing   a   name   in   the   input   field   below : </b></p>
+            <form action="" method="post">
+                
+                First   Name : <input type="text" onkeyup="show_hint(this.value)">
+                <p>Suggestions : <span id="text_hint"></span></p>
+                
+            </form>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="first_message.xsl"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+
+<root>
+    
+    <!--   MAHMUDUL   HASAN   KHAN   w3Schools.com   -->
+    
+    <note>
+        
+        <to>Mahmud</to>
+        <from>Alia   Bhatt</from>
+        <heading>Love   Message</heading>
+        <body>I   love   you,   dear   !!!</body>
+        
+    </note>
+    <note>
+        
+        <to>Mahmud</to>
+        <from>Katrina   Kaif</from>
+        <heading>Friend   Request</heading>
+        <body>I   want   to   be   your   friend   .</body>
+    
+    </note>
+    
+</root>

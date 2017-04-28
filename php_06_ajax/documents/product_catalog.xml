@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="product_catalog.xsl"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <!--   MAHMUDUL   HASAN   KHAN   w3Schools.com   -->
+    <category>
+        <category_name>Computer</category_name>
+        <sub_category>
+            <sub_category_name>Desktop</sub_category_name>
+            <product>
+                <product_id>1</product_id>
+                <name>Rishit Executive PC</name>
+                <processor>Intel Dual Core 2.8GHz</processor>
+                <ram>2GB</ram>
+                <hdd>500GB</hdd>
+            </product>
+        </sub_category>
+        <sub_category>
+            <sub_category_name>Laptop</sub_category_name>
+            <product>
+                <product_id>2</product_id>
+                <name>Dell Inspiron 7520G 3230M</name>
+                <processor>Intel Core i5 2.6GHz</processor>
+                <ram>8GB</ram>
+                <hdd>750GB</hdd>
+            </product>
+            <product>
+                <product_id>3</product_id>
+                <name>HP Pavilion 14-e036TX</name>
+                <processor>Intel Core i7 4th Gen 3.2GHz</processor>
+                <ram>4GB</ram>
+                <hdd>1TB</hdd>
+            </product>
+        </sub_category>
+    </category>
+    <category>
+        <category_name>Mobile   Phone</category_name>
+        <sub_category>
+            <sub_category_name>Nokia</sub_category_name>
+            <product>
+                <product_id>4</product_id>
+                <name>Nokia Asha 503 Dual SIM</name>
+                <sim>Dual SIM, Dual standby</sim>
+                <camera>5 MegaPixel, Scondary : No</camera>
+                <internet>GPRS, EDGE, 3G</internet>
+                <bluetooth>v3.0 with A2DP</bluetooth>
+                <fm_radio>Yes</fm_radio>
+                <java>Yes</java>
+            </product>
+        </sub_category>
+        <sub_category>
+            <sub_category_name>Samsung</sub_category_name>
+            <product>
+                <product_id>5</product_id>
+                <name>Samsung Galaxy Core I8262</name>
+                <os>Android v4.1.2 (Jelly Bean),</os>
+                <processor>Dual Core 1.2GHz</processor>
+                <ram>1GB</ram>
+                <sim>Dual SIM, Dual standby</sim>
+                <camera>5 MegaPixel, Scondary : VGA</camera>
+                <internet>GPRS, EDGE, 3G</internet>
+                <bluetooth>v3.0 with A2DP</bluetooth>
+                <fm_radio>FM Radio with RDS</fm_radio>
+                <java>Yes</java>
+            </product>
+        </sub_category>
+    </category>
+</root>

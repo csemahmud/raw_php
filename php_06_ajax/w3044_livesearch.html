@@ -1,0 +1,48 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            
+            function show_result(str){
+                if(str.length==0){
+                    document.getElementById('searchresult').innerHTML = '';
+                    document.getElementById('searchresult').style.border = '0px';
+                    return ;
+                }
+                
+                if(window.XMLHttpRequest){
+                    //   code   for   IE7+,   Firefox   Chrome,   Opera   and   Safari
+                    var xmlhttp = new XMLHttpRequest();
+                }
+                else{
+                    //   code   for   IE6,   IE5
+                    var xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                }
+                
+                xmlhttp.onreadystatechange = function(){
+                    if(xmlhttp.readyState==4 && xmlhttp.status==200){
+                        document.getElementById('searchresult').innerHTML = xmlhttp.responseText;
+                        document.getElementById('searchresult').style.border = '1px solid #A5ACB2';
+                    }
+                }
+                
+                xmlhttp.open('GET','w3044_livesearch.php?q='+str,true);
+                xmlhttp.send();
+            }
+            
+        </script>
+    </head>
+    <!--   MAHMUDUL   HASAN   KHAN   w3schools.com   -->
+    <body>
+        <strong>Search   for   a   web-site   in   the  input   field   below : </strong>
+        <br/>
+        <input type="text" size="30" onkeyup="show_result(this.value)">
+        <div id="searchresult"></div>
+    </body>
+</html>
