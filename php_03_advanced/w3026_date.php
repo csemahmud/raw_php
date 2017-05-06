@@ -23,6 +23,6 @@ and open the template in the editor.
         
         ?>
         
-        <p>Warining : There   is   some   bugs   Left   intentionally   !!!</p>
+        <p>Warning : There   is   some   bugs   Left   intentionally   !!!</p>
     </body>
 </html>

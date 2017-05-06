@@ -35,11 +35,11 @@ and open the template in the editor.
         
         echo "<ul>";
         
-        echo "<li>".$xml->getName()."</li>";
+        echo "<li>".$xml->getName()." : ".$xml."</li>";
         
         foreach ($xml->children() as $child1)
         {
-            echo "<li>".$child1->getName()."</li>";
+            echo "<li>".$child1->getName()." : ".$child1."</li>";
             foreach ($child1->children() as $child2) {
             echo "<li>".$child2->getName()." : ".$child2."</li>";
             }

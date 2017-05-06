@@ -61,7 +61,7 @@ and open the template in the editor.
         
         //   Function   to   use   at   the   start   of   an   element
         
-        function start_element_handler($paerser,$element_name,$element_attrs){
+        function start_element_handler($parser,$element_name,$element_attrs){
             switch ($element_name){
                 case "ROOT":
                     echo "<div id = 'root'>";

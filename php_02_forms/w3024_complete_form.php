@@ -52,7 +52,7 @@ and open the template in the editor.
                     $email = NULL;
                 }
             }
-            if (!empty($_POST["email"]))
+            if (!empty($_POST["website"]))
             {
                 $website = test_input($_POST["website"]);
                 if (!preg_match(
